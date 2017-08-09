@@ -2,13 +2,17 @@ class RequestBodyBuilder:
 
     @staticmethod
     def build_send_yo_body(username, api_token, text=None, link=None, coordinate=None):
-        return {
+        body = {
             "username": username,
             "api_token": api_token,
             "text": text,
-            "link": link,
-            "location": "{latitude},{longitude}".format(latitude=coordinate.latitude, longitude=coordinate.longitude)
+            "link": link
         }
+
+        if coordinate is not None:
+            body["location"] = "{latitude},{longitude}".format(latitude=coordinate.latitude, longitude=coordinate.longitude)
+
+        return body
 
     @staticmethod
     def build_send_yo_to_all_subscribers_body(api_token, link=None):
