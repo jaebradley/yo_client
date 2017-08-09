@@ -1,7 +1,8 @@
 import requests
 
-from urls import SEND_YO_URL, SEND_YOS_TO_ALL_SUBSCRIBERS_URL, CREATE_ACCOUNT_URL, USERNAME_EXISTS_URL, SUBSCRIBERS_COUNT_URL
-from request_parameters import RequestBodyBuilder, RequestQueryParametersBuilder
+from yo_client.urls import SEND_YO_URL, SEND_YOS_TO_ALL_SUBSCRIBERS_URL, CREATE_ACCOUNT_URL, USERNAME_EXISTS_URL, \
+    SUBSCRIBERS_COUNT_URL
+from yo_client.request_parameters import RequestBodyBuilder, RequestQueryParametersBuilder
 
 
 class YoClient:
