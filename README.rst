@@ -30,8 +30,8 @@ Send a Yo
 ~~~~~~~~~
 
 Send a Yo to a user with optional text and an optional link or
-coordinate. Note that currently, the Yo API allows either a link or
-coordinate to be sent with a Yo, but not both.
+coordinate. Currently, the Yo API allows either a link or coordinate to
+be sent with a Yo, but not both.
 
 .. code:: python
 
@@ -52,8 +52,6 @@ link.
 Create a Yo Account
 ~~~~~~~~~~~~~~~~~~~
 
-Create a Yo account with a specified username.
-
 .. code:: python
 
     client = YoClient("some_api_key")
@@ -62,8 +60,6 @@ Create a Yo account with a specified username.
 Check if a Username Exists
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Check if a username exists
-
 .. code:: python
 
     client = YoClient("some_api_key")
@@ -71,8 +67,6 @@ Check if a username exists
 
 Get Subscribers Count
 ~~~~~~~~~~~~~~~~~~~~~
-
-Get the count of subscribers for your account
 
 .. code:: python
 
