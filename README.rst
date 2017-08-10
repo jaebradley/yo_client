@@ -1,6 +1,8 @@
 Yo RPC API Client
 =================
 
+|Build Status|
+
 Introduction
 ------------
 
@@ -76,3 +78,6 @@ Get the count of subscribers for your account
 
     client = YoClient("some_api_key")
     response = client.get_subscribers_count()
+
+.. |Build Status| image:: https://travis-ci.org/jaebradley/yo_client.svg?branch=master
+   :target: https://travis-ci.org/jaebradley/yo_client
