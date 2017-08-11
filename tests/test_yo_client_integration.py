@@ -45,7 +45,7 @@ class GetSubscribersCountIntegrationTest(TestCase):
         client = YoClient(api_key=API_KEY)
         count = client.get_subscribers_count()
         self.assertIsNotNone(count)
-        self.assertTrue(count > 0)
+        self.assertTrue(count["count"] > 0)
 
 
 class UsernameExistsIntegrationTest(TestCase):
