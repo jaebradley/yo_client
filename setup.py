@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 setup(
-  name="yo_client",
+  name="YoClient",
   packages=find_packages(exclude=["tests*"]),
   install_requires=["requests"],
   version="0.0.1",
