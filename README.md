@@ -1,6 +1,7 @@
 # Yo RPC API Client
 
 [![Build Status](https://travis-ci.org/jaebradley/yo_client.svg?branch=master)](https://travis-ci.org/jaebradley/yo_client)
+[![codecov](https://codecov.io/gh/jaebradley/yo_client/branch/master/graph/badge.svg)](https://codecov.io/gh/jaebradley/yo_client)
 
 ## Introduction
 This is a Python client for the [Yo RPC API](http://docs.justyo.co/docs/yo).

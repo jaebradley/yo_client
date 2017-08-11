@@ -1,7 +1,7 @@
 Yo RPC API Client
 =================
 
-|Build Status|
+|Build Status| |codecov|
 
 Introduction
 ------------
@@ -75,3 +75,5 @@ Get Subscribers Count
 
 .. |Build Status| image:: https://travis-ci.org/jaebradley/yo_client.svg?branch=master
    :target: https://travis-ci.org/jaebradley/yo_client
+.. |codecov| image:: https://codecov.io/gh/jaebradley/yo_client/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/jaebradley/yo_client
