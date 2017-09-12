@@ -1,7 +1,7 @@
 Yo RPC API Client
 =================
 
-|Build Status| |codecov|
+|Build Status| |codecov| |PyPI version|
 
 Introduction
 ------------
@@ -12,7 +12,7 @@ API <http://docs.justyo.co/docs/yo>`__.
 Installation
 ------------
 
-``pip install yo_client``
+``pip install YoClient``
 
 Usage
 -----
@@ -24,16 +24,22 @@ Instantiate a client by passing an API Key in the constructor
 
 .. code:: python
 
+    from yo_client import YoClient
+
     client = YoClient("some_api_key")
 
 Send a Yo
 ~~~~~~~~~
 
 Send a Yo to a user with optional text and an optional link or
-coordinate. Currently, the Yo API allows either a link or coordinate to
-be sent with a Yo, but not both.
+coordinate.
+
+Currently, the Yo API allows either a link or coordinate to be sent with
+a ``Yo``, but not both.
 
 .. code:: python
+
+    from yo_client import YoClient
 
     client = YoClient("some_api_key")
     response = client.send_yo(username="some_username", text="some_text", link="some_link")
@@ -46,6 +52,8 @@ link.
 
 .. code:: python
 
+    from yo_client import YoClient
+
     client = YoClient("some_api_key")
     response = client.send_yo_to_all_subscribers(link="some_link")
 
@@ -53,6 +61,8 @@ Create a Yo Account
 ~~~~~~~~~~~~~~~~~~~
 
 .. code:: python
+
+    from yo_client import YoClient
 
     client = YoClient("some_api_key")
     response = client.create_account(username="some_username")
@@ -62,6 +72,8 @@ Check if a Username Exists
 
 .. code:: python
 
+    from yo_client import YoClient
+
     client = YoClient("some_api_key")
     response = client.username_exists(username="some_username")
 
@@ -70,6 +82,8 @@ Get Subscribers Count
 
 .. code:: python
 
+    from yo_client import YoClient
+
     client = YoClient("some_api_key")
     response = client.get_subscribers_count()
 
@@ -77,3 +91,5 @@ Get Subscribers Count
    :target: https://travis-ci.org/jaebradley/yo_client
 .. |codecov| image:: https://codecov.io/gh/jaebradley/yo_client/branch/master/graph/badge.svg
    :target: https://codecov.io/gh/jaebradley/yo_client
+.. |PyPI version| image:: https://badge.fury.io/py/YoClient.svg
+   :target: https://badge.fury.io/py/YoClient
